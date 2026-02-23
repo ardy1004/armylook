@@ -1,0 +1,140 @@
+{
+  "project_name": "Landing Page Investasi Hotel & Aset Komersial Godean Jogja",
+  "objective": "Menghasilkan leads WhatsApp eksklusif dari calon pembeli langsung (serious buyer), tanpa broker atau perantara",
+  "design_system": {
+    "visual_style": "clean luxury, bright, elegant, professional, credible",
+    "background_style": "light premium background (soft white, warm ivory, subtle beige gradient)",
+    "color_palette": {
+      "primary": "#1F2937",
+      "secondary": "#374151",
+      "accent": "#C9A24D",
+      "background_main": "#FAFAFA",
+      "background_section": "#F4F5F7",
+      "alert": "#B91C1C"
+    },
+    "typography": {
+      "heading": "Playfair Display (elegant, investor-grade)",
+      "body": "Inter (clean, modern, high readability)"
+    },
+    "layout_principles": [
+      "mobile-first",
+      "large whitespace",
+      "clear visual hierarchy",
+      "single conversion goal",
+      "high contrast CTA"
+    ]
+  },
+  "technical_spec": {
+    "responsive": true,
+    "mobile_friendly": true,
+    "page_speed_target": "<2s",
+    "image_optimization": "webp",
+    "sticky_whatsapp": true,
+    "whatsapp_number": "081391278889"
+  },
+  "assets": {
+    "images": [
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813218/image_4_st07q0.webp",
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813219/image_6_osvo7s.webp",
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813219/image_1_t9b6x9.webp",
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813219/image_3_sxw6kt.webp",
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813219/image_7_ffoor8.webp",
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813219/image_2_pyff2t.webp",
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813219/image_5_wfgmov.webp",
+      "https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813219/image_8_nldiss.webp"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero_section",
+      "background": "light with subtle gold accent lines",
+      "headline": "Dijual Hotel & Aset Komersial Premium di Jalan Utama Godean Km 5",
+      "subheadline": "Dalam Ringroad Yogyakarta | LT 747 m² | Potensi 24+ Kamar | SHM & IMB Lengkap",
+      "value_points": [
+        "Pinggir Jalan Utama",
+        "Dekat Pusat Kota",
+        "Cocok Untuk Hotel Revival & Usaha Komersial"
+      ],
+      "cta_primary": "Jadwalkan Survey via WhatsApp",
+      "cta_secondary": "Lihat Detail Properti"
+    },
+    {
+      "id": "gallery",
+      "type": "image_gallery",
+      "layout": "premium masonry + slider",
+      "note": "Menampilkan kondisi aktual properti secara transparan"
+    },
+    {
+      "id": "property_data",
+      "type": "data_grid",
+      "title": "Spesifikasi Properti",
+      "items": [
+        "Luas Tanah 747 m²",
+        "Luas Bangunan ±950 m²",
+        "12 Kamar Aktif (Kamar Mandi Dalam)",
+        "Bangunan Tambahan ±60% (Potensi 9–12 Kamar)",
+        "Bangunan Depan Jalan Cocok Ruang Usaha",
+        "Rumah Induk 4 Kamar Tidur",
+        "Legalitas SHM & IMB Lengkap",
+        "Status On Bank (Outstanding ±7 Miliar)"
+      ]
+    },
+    {
+      "id": "investment_angle",
+      "type": "investment_section",
+      "title": "Sudut Pandang Investor",
+      "content": [
+        "Sebelum pandemi, properti ini dikelola bersama manajemen OYO dengan omset stabil di kisaran 90–120 juta per bulan.",
+        "Saat ini properti non-operasional dan membutuhkan perbaikan, membuka peluang akuisisi di bawah nilai pasar.",
+        "Lokasi dalam ringroad dan di jalan utama menjadikan properti ini sangat fleksibel untuk hotel, co-living, kantor, klinik, atau usaha komersial lain."
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "pricing_block",
+      "highlight": true,
+      "price_before": "Rp 13.000.000.000",
+      "price_now": "Rp 10.500.000.000 (Nego)",
+      "note": "Harga belum termasuk pajak pembeli dan biaya notaris (AJB & balik nama)."
+    },
+    {
+      "id": "strict_disclaimer",
+      "type": "alert_box",
+      "style": "high-visibility, light background with red border",
+      "content": "DISCLAIMER TEGAS: Properti ini ditawarkan khusus kepada CALON PEMBELI LANGSUNG (END BUYER). TIDAK menerima dan TIDAK melayani broker, perantara, agen properti, atau pihak mana pun yang bertindak sebagai mediator, baik mengatasnamakan diri sendiri maupun pihak lain. Jika Anda adalah broker/perantara, mohon untuk tidak menghubungi dan tidak menekan tombol WhatsApp. Hanya calon pembeli serius dengan kesiapan pembiayaan yang akan ditanggapi."
+    },
+    {
+      "id": "lead_form",
+      "type": "form",
+      "title": "Form Minat Pembeli Serius",
+      "fields": [
+        { "label": "Nama", "type": "text", "required": true },
+        { "label": "Asal Daerah", "type": "text", "required": true },
+        {
+          "label": "Rencana Pembiayaan",
+          "type": "dropdown",
+          "options": ["Cash Keras", "Cash Bertahap", "KPR"],
+          "required": true
+        }
+      ],
+      "submit_behavior": {
+        "action": "redirect_whatsapp",
+        "message_template": "Halo, saya calon pembeli langsung dan tertarik dengan properti Hotel Godean. Nama: {{nama}}, Asal Daerah: {{asal}}, Rencana Pembiayaan: {{pembiayaan}}."
+      }
+    },
+    {
+      "id": "final_cta",
+      "type": "cta_section",
+      "headline": "Siap Melakukan Survey & Negosiasi?",
+      "subheadline": "Hubungi sekarang jika Anda benar-benar calon pembeli langsung.",
+      "cta_text": "Hubungi via WhatsApp"
+    }
+  ],
+  "conversion_rules": {
+    "single_goal": "WhatsApp Lead",
+    "form_gate_before_whatsapp": true,
+    "no_external_links": true,
+    "no_distracting_navigation": true
+  }
+}
