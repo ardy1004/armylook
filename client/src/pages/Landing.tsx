@@ -59,7 +59,7 @@ export default function Landing() {
         <div className="absolute inset-0 z-0">
           <img 
             src="https://res.cloudinary.com/dhb8b7nrd/image/upload/v1771813218/image_4_st07q0.webp" 
-            alt="Hotel Godean Facade" 
+            alt="Army Look Hotel Facade" 
             className="w-full h-full object-cover"
           />
           {/* Gradient to make text readable but keep image visible */}
@@ -79,7 +79,7 @@ export default function Landing() {
             </motion.div>
             
             <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.1] mb-6 text-balance">
-              Dijual Hotel & Aset Komersial Premium di Jalan Utama Godean Km 5
+              Dijual Hotel & Aset Komersial Premium di Pinggir JL Utama Barat Tugu Jogja
             </motion.h1>
             
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-white/90 mb-8 font-light max-w-2xl text-balance leading-relaxed">
@@ -133,7 +133,7 @@ export default function Landing() {
               </h3>
               <p className="text-destructive/90 leading-relaxed font-medium text-balance text-sm md:text-base">
                 Properti ini ditawarkan khusus kepada <strong className="font-extrabold underline decoration-destructive/30 underline-offset-4">CALON PEMBELI LANGSUNG (END BUYER)</strong>. 
-                TIDAK menerima dan TIDAK melayani broker, perantara, agen properti, atau pihak mana pun yang bertindak sebagai mediator. 
+                TIDAK menerima dan TIDAK melayani <span className="underline">broker</span>, <span className="underline">perantara</span>, <span className="underline">agen properti</span>, atau <span className="underline">pihak mana pun</span> yang bertindak sebagai mediator. 
                 Jika Anda adalah broker/perantara, mohon untuk tidak menghubungi. Hanya calon pembeli serius dengan kesiapan pembiayaan yang akan ditanggapi.
               </p>
             </div>
@@ -257,7 +257,7 @@ export default function Landing() {
               </div>
               <h3 className="text-xl font-bold text-primary mb-3">Fleksibilitas Penggunaan</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Lokasi prime di dalam ringroad Godean Km 5 menjadikan aset ini sangat cocok direvitalisasi untuk hotel, co-living, kantor, klinik, atau F&B.
+                Lokasi prime di Pinggir JL Utama Barat Tugu Jogja menjadikan aset ini sangat cocok direvitalisasi untuk hotel, co-living, kantor, klinik, atau F&B.
               </p>
             </div>
           </div>

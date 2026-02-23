@@ -7,26 +7,16 @@ export function useCreateLead() {
 
   return useMutation<LeadResponse, Error, LeadInput>({
     mutationFn: async (data) => {
+      // Validate the data
       const validated = api.leads.create.input.parse(data);
-      const res = await fetch(api.leads.create.path, {
-        method: api.leads.create.method,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(validated),
-      });
+      
+      // langsung arahkan ke WhatsApp tanpa simpan ke database
+      const text = `Halo, saya calon pembeli langsung dan tertarik dengan properti Army Look Hotel
 
-      if (!res.ok) {
-        if (res.status === 400) {
-          const error = api.leads.create.responses[400].parse(await res.json());
-          throw new Error(error.message);
-        }
-        throw new Error("Gagal mengirim data. Silakan coba lagi.");
-      }
-
-      return api.leads.create.responses[201].parse(await res.json());
-    },
-    onSuccess: (data) => {
-      // Format the WhatsApp message exactly as requested
-      const text = `Halo, saya calon pembeli langsung dan tertarik dengan properti Hotel Godean.\n\nNama: ${data.name}\nAsal Daerah: ${data.origin}\nRencana Pembiayaan: ${data.financingPlan}`;
+Nama: ${validated.name}
+Nomor Whatsapp Aktif: ${validated.phone}
+Asal Daerah: ${validated.origin}
+Rencana Pembiayaan: ${validated.financingPlan}`;
       
       const whatsappUrl = `https://wa.me/6281391278889?text=${encodeURIComponent(text)}`;
       
@@ -37,6 +27,16 @@ export function useCreateLead() {
         title: "Berhasil!",
         description: "Mengarahkan Anda ke WhatsApp...",
       });
+      
+      // Return mock response since we're not saving to database
+      return {
+        id: Date.now(),
+        name: validated.name,
+        phone: validated.phone,
+        origin: validated.origin,
+        financingPlan: validated.financingPlan,
+        createdAt: new Date(),
+      };
     },
     onError: (error) => {
       toast({

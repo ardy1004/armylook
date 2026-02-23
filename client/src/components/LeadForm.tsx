@@ -29,6 +29,7 @@ export function LeadForm() {
     resolver: zodResolver(insertLeadSchema),
     defaultValues: {
       name: "",
+      phone: "",
       origin: "",
       financingPlan: "",
     },
@@ -60,6 +61,24 @@ export function LeadForm() {
                 <FormControl>
                   <Input 
                     placeholder="Bpk/Ibu..." 
+                    className="h-12 bg-secondary/50 border-transparent focus:bg-white focus:border-accent transition-all" 
+                    {...field} 
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-primary font-medium">Nomor WhatsApp Aktif</FormLabel>
+                <FormControl>
+                  <Input 
+                    placeholder="Contoh: 081234567890" 
                     className="h-12 bg-secondary/50 border-transparent focus:bg-white focus:border-accent transition-all" 
                     {...field} 
                   />
