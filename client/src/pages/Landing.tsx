@@ -39,12 +39,18 @@ export default function Landing() {
     document.getElementById("property-details")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const openWhatsApp = () => {
+    const text = `Halo, saya tertarik dengan properti Army Look Hotel di Pinggir JL Utama Barat Tugu Jogja. Mohon informasi lebih lanjut.`;
+    const whatsappUrl = `https://wa.me/6281391278889?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Sticky WA Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <Button 
-          onClick={scrollToContact}
+          onClick={openWhatsApp}
           size="lg"
           className="h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-[0_8px_30px_rgb(37,211,102,0.3)] hover:shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:-translate-y-1 transition-all duration-300 px-6 gap-2"
         >
@@ -103,7 +109,7 @@ export default function Landing() {
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <Button 
-                onClick={scrollToContact}
+                onClick={openWhatsApp}
                 className="h-14 px-8 text-base font-semibold bg-accent hover:bg-accent/90 text-white border-none shadow-lg shadow-accent/20"
               >
                 Jadwalkan Survey via WhatsApp
