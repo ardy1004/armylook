@@ -135,7 +135,7 @@ export default function Landing() {
             <div>
               <h3 className="text-destructive font-bold text-lg mb-2 flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5 md:hidden" />
-                DISCLAIMER TEGAS
+                PERHATIAN!!!
               </h3>
               <p className="text-destructive/90 leading-relaxed font-medium text-balance text-sm md:text-base">
                 Properti ini ditawarkan khusus kepada <strong className="font-extrabold underline decoration-destructive/30 underline-offset-4">CALON PEMBELI LANGSUNG (END BUYER)</strong>. 
